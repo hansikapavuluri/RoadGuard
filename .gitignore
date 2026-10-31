@@ -1,0 +1,12 @@
+dataset/
+outputs/
+test_videos/
+models/
+
+__pycache__/
+*.pyc
+
+*.pt
+*.mp4
+*.avi
+*.mov
