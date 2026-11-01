@@ -46,3 +46,4 @@ ultralytics-thop==2.2.3
 urllib3==2.8.0
 Werkzeug==3.1.9
 gunicorn
+transformers
