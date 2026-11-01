@@ -20,14 +20,11 @@ if PROJECT_DIR not in sys.path:
 
 try:
     from combined import process_video as combined_process_video
-except ImportError as error:
-    raise ImportError(
-        "Could not import process_video from combined.py. "
-        "Ensure combined.py is in the UE_PROJECT root and defines "
-        "process_video(input_path, output_video_path, output_csv_path)."
+
+except Exception as error:
+    raise RuntimeError(
+        f"Failed to load combined.py: {type(error).__name__}: {error}"
     ) from error
-
-
 # ============================================================
 # VIDEO PROCESSING
 # ============================================================
